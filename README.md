@@ -65,7 +65,7 @@ Run `yarn start` in development
 
 ## Using the Live App
 
-The live application is hosted at [https://phone-number-generator-sivy.herokuapp.com](https://phone-number-generator-sivy.herokuapp.com).
+The live application is hosted at [https://frosty-wilson-13f196.netlify.com/](https://frosty-wilson-13f196.netlify.com/).
 
 ## Contributing Guide
 
