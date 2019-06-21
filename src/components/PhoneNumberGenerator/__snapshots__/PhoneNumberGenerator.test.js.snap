@@ -1,0 +1,334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhoneNumberGenerator should render PhoneNumberGenerator component correctly 1`] = `
+<PhoneNumberGenerator
+  metadata={
+    Object {
+      "page": 1,
+      "perPage": 10,
+      "totalCount": 450,
+    }
+  }
+  onPageChange={[MockFunction]}
+>
+  <div
+    className="container-fluid rc-PhoneNumberGenerator mt-5"
+  >
+    <div
+      className="row justify-content-center main"
+    >
+      <h4
+        className="text-center m-3 m-3-md m-5-l"
+      >
+        Random Phone Number Generator
+      </h4>
+      <div
+        className="d-flex justify-content-between"
+      >
+        <Input
+          className="w-50 mr-2"
+          name="sort"
+          onChange={[Function]}
+          type="select"
+          value="ASC"
+        >
+          <select
+            className="w-50 mr-2 form-control"
+            name="sort"
+            onChange={[Function]}
+            value="ASC"
+          >
+            <option>
+              ASC
+            </option>
+            <option>
+              DESC
+            </option>
+          </select>
+        </Input>
+        <InputGroup
+          className="w-100 mb-3"
+          tag="div"
+        >
+          <div
+            className="w-100 mb-3 input-group"
+          >
+            <Input
+              name="count"
+              onChange={[Function]}
+              placeholder="Numbers Count"
+              type="number"
+              value={1000}
+            >
+              <input
+                className="form-control"
+                name="count"
+                onChange={[Function]}
+                placeholder="Numbers Count"
+                type="number"
+                value={1000}
+              />
+            </Input>
+            <InputGroupAddon
+              addonType="append"
+              tag="div"
+            >
+              <div
+                className="input-group-append"
+              >
+                <Button
+                  className="w-100"
+                  color="secondary"
+                  disabled={false}
+                  onClick={[Function]}
+                  tag="button"
+                >
+                  <button
+                    aria-label={null}
+                    className="w-100 btn btn-secondary"
+                    disabled={false}
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    Generate
+                  </button>
+                </Button>
+              </div>
+            </InputGroupAddon>
+          </div>
+        </InputGroup>
+      </div>
+      <Modal
+        actionButton={
+          <CsvDownload
+            bom={true}
+            columns={
+              Array [
+                Object {
+                  "displayName": "ID",
+                  "id": "id",
+                },
+                Object {
+                  "displayName": "Numbers",
+                  "id": "number",
+                },
+              ]
+            }
+            datas={Array []}
+            filename="phone-numbers"
+            noHeader={false}
+            separator=","
+          >
+            <Button
+              color="secondary"
+              tag="button"
+            >
+              Save Results
+            </Button>
+          </CsvDownload>
+        }
+        disabled={true}
+        label="View/Save Results"
+        title="Results"
+      >
+        <Button
+          className="w-50 h-25 mx-auto mb-4"
+          color="secondary"
+          disabled={true}
+          onClick={[Function]}
+          tag="button"
+        >
+          <button
+            aria-label={null}
+            className="w-50 h-25 mx-auto mb-4 btn btn-secondary disabled"
+            disabled={true}
+            onClick={[Function]}
+            type="button"
+          >
+            View/Save Results
+          </button>
+        </Button>
+        <Modal
+          autoFocus={true}
+          backdrop={true}
+          backdropTransition={
+            Object {
+              "mountOnEnter": true,
+              "timeout": 150,
+            }
+          }
+          centered={false}
+          fade={true}
+          isOpen={false}
+          keyboard={true}
+          modalTransition={
+            Object {
+              "timeout": 300,
+            }
+          }
+          onClosed={[Function]}
+          onOpened={[Function]}
+          returnFocusAfterClose={true}
+          role="dialog"
+          scrollable={false}
+          toggle={[Function]}
+          unmountOnClose={true}
+          zIndex={1050}
+        />
+      </Modal>
+      <div
+        className="card result-card text-center mb-3 pt-3"
+      >
+        <div
+          className="card-body d-flex justify-content-center result-content"
+        >
+          <div
+            className="default-message"
+          >
+            <p
+              className="px-5"
+            >
+              Generate some numbers by supplying count of less than or equal to 10000 and sort of ascending or descending order
+            </p>
+          </div>
+        </div>
+      </div>
+      <Pagination
+        metadata={
+          Object {
+            "page": 1,
+            "perPage": 10,
+            "totalCount": 0,
+          }
+        }
+        onPageChange={[Function]}
+      >
+        <div
+          className="mx-auto invisible"
+        >
+          <a
+            activePage={1}
+            firstPageText="«"
+            getPageUrl={[Function]}
+            hideFirstLastPages={false}
+            innerClass="pagination"
+            itemClass="page-item"
+            itemsCountPerPage={10}
+            lastPageText="»"
+            nextPageText="⟩"
+            onChange={[Function]}
+            pageRangeDisplayed={10}
+            prevPageText="⟨"
+            totalItemsCount={0}
+          >
+            <ul
+              className="pagination"
+            >
+              <t
+                activeClass="active"
+                disabledClass="disabled"
+                href="#"
+                isActive={false}
+                isDisabled={true}
+                itemClass="page-item"
+                key="first"
+                linkClass=""
+                onClick={[Function]}
+                pageNumber={1}
+                pageText="«"
+              >
+                <li
+                  className="page-item disabled"
+                  onClick={[Function]}
+                >
+                  <a
+                    className=""
+                    href="#"
+                  >
+                    «
+                  </a>
+                </li>
+              </t>
+              <t
+                activeClass="active"
+                disabledClass="disabled"
+                href="#"
+                isActive={false}
+                isDisabled={true}
+                itemClass="page-item"
+                key="prev-1"
+                linkClass=""
+                onClick={[Function]}
+                pageNumber={-1}
+                pageText="⟨"
+              >
+                <li
+                  className="page-item disabled"
+                  onClick={[Function]}
+                >
+                  <a
+                    className=""
+                    href="#"
+                  >
+                    ⟨
+                  </a>
+                </li>
+              </t>
+              <t
+                activeClass="active"
+                disabledClass="disabled"
+                href="#"
+                isActive={false}
+                isDisabled={true}
+                itemClass="page-item"
+                key="next1"
+                linkClass=""
+                onClick={[Function]}
+                pageNumber={1}
+                pageText="⟩"
+              >
+                <li
+                  className="page-item disabled"
+                  onClick={[Function]}
+                >
+                  <a
+                    className=""
+                    href="#"
+                  >
+                    ⟩
+                  </a>
+                </li>
+              </t>
+              <t
+                activeClass="active"
+                disabledClass="disabled"
+                href="#"
+                isActive={false}
+                isDisabled={true}
+                itemClass="page-item"
+                key="last"
+                linkClass=""
+                onClick={[Function]}
+                pageNumber={0}
+                pageText="»"
+              >
+                <li
+                  className="page-item disabled"
+                  onClick={[Function]}
+                >
+                  <a
+                    className=""
+                    href="#"
+                  >
+                    »
+                  </a>
+                </li>
+              </t>
+            </ul>
+          </a>
+        </div>
+      </Pagination>
+    </div>
+  </div>
+</PhoneNumberGenerator>
+`;

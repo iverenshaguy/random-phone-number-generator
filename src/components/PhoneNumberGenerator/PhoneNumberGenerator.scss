@@ -1,0 +1,44 @@
+.rc-PhoneNumberGenerator {
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .select {
+    border-radius: 0;
+  }
+
+  table {
+   td, th {
+     font-size: 1rem;
+     padding: 0.2rem;
+   }
+  }
+
+  .result-card {
+    min-width: 600px;
+    max-width: 912px;
+    min-height: 416px;
+    border: 1px solid #ced4da;
+
+    .default-message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        font-size: 1.4em;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .result-card {
+      min-width: 330px;
+      min-height: 416px;
+      border: 1px solid #ced4da;
+    }
+  }
+}

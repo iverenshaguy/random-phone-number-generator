@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal should render Modal component correctly 1`] = `
+<Modal
+  metadata={
+    Object {
+      "page": 1,
+      "perPage": 10,
+      "totalCount": 450,
+    }
+  }
+  onPageChange={[MockFunction]}
+>
+  <Button
+    className="w-50 h-25 mx-auto mb-4"
+    color="secondary"
+    onClick={[Function]}
+    tag="button"
+  >
+    <button
+      aria-label={null}
+      className="w-50 h-25 mx-auto mb-4 btn btn-secondary"
+      onClick={[Function]}
+      type="button"
+    />
+  </Button>
+  <Modal
+    autoFocus={true}
+    backdrop={true}
+    backdropTransition={
+      Object {
+        "mountOnEnter": true,
+        "timeout": 150,
+      }
+    }
+    centered={false}
+    fade={true}
+    isOpen={false}
+    keyboard={true}
+    modalTransition={
+      Object {
+        "timeout": 300,
+      }
+    }
+    onClosed={[Function]}
+    onOpened={[Function]}
+    returnFocusAfterClose={true}
+    role="dialog"
+    scrollable={false}
+    toggle={[Function]}
+    unmountOnClose={true}
+    zIndex={1050}
+  />
+</Modal>
+`;

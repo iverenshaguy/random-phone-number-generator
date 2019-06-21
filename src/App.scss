@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,600i");
+@import '~bootstrap/scss/bootstrap.scss';
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  color: #495057 !important;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  background-color: #F8F9FA !important;
+}

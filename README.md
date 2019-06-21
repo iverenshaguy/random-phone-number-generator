@@ -1,68 +1,99 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Phone Number Generator
 
-## Available Scripts
+[![Build Status](https://travis-ci.org/iverenshaguy/random-phone-number-generator.svg?branch=develop)](https://travis-ci.org/iverenshaguy/random-phone-number-generator) [![codecov](https://codecov.io/gh/iverenshaguy/random-phone-number-generator/branch/develop/graph/badge.svg)](https://codecov.io/gh/iverenshaguy/random-phone-number-generator)
 
-In the project directory, you can run:
+A mini React app that allows a user generate random phone numbers and save them as CSV files
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [Technologies](#technologies)
+* [Features Implemented](#features-implemented)
+* [Getting Started](#getting-started)
+  * [Installation](#installation)
+  * [Development](#development)
+  * [Testing](#testing)
+* [Contributing Guide](#contributing-guide)
+* [FAQs](#faqs)
+* [License](#license)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Pivotal Tracker
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Project is currently being built with the Project Management Tool, Pivotal Tracker.
+You can find the project at [https://www.pivotaltracker.com/n/projects/2357120](https://www.pivotaltracker.com/n/projects/2357120)
 
 ### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+App is deployed at [https://frosty-wilson-13f196.netlify.com/](https://frosty-wilson-13f196.netlify.com/)
 
-### `npm run build` fails to minify
+## Technologies
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* [NodeJS](https://nodejs.org/) - Runtime Environment
+* [ExpressJs](https://expressjs.com/) - Web Application Framework
+
+### Supporting Packages
+
+#### Test Tools
+
+* [Jest](https://jestjs.io/) -JavaScript Testing Framework with a focus on simplicity
+
+## Features Implemented
+
+### Users
+
+* Users should be able to generate a set of random numbers in ascending or descending order
+* Users should be able to download the set of random numbers generated
+
+## Getting Started
+
+### Installation
+
+* Install [NodeJS](https://nodejs.org/) and [Yarn](https://www.yarnpkg.org/) on your computer
+* Clone this repository using `git clone https://github.com/iverenshaguy/random-phone-number-generator.git`
+* Run `yarn install` to install all dependencies
+* Run `yarn build` to build the project
+* Interact with app at url generated
+
+### Development
+
+Run `yarn start` in development
+
+### Testing
+
+* After installing as shown
+* Run `yarn test`
+* This will run test and display coverage data as generated by Jest
+
+## Using the Live App
+
+The live application is hosted at [https://phone-number-generator-sivy.herokuapp.com](https://phone-number-generator-sivy.herokuapp.com).
+
+## Contributing Guide
+
+* Fork the repository
+* Make your contributions
+* Write Test Cases for your contribution with at least **80%** coverage
+* Create a pull request against the develop branch
+
+## FAQs
+
+* What language is used to build this application?
+
+  * The application is entirely built with Javascript
+
+* Is this an open-source project?
+
+  * Yes, this is an open-source project.
+
+* Who can contribute?
+
+  * Anyone can contribute as long as you follow the contribution guide outlined above
+
+* Is the application licensed?
+
+  * Yes, the application is licensed under the [MIT license](https://github.com/iverenshaguy/random-phone-number-generator/blob/develop/LICENSE)
+
+## License
+
+&copy; Iveren Shaguy
+
+Licensed under the [MIT License](https://github.com/iverenshaguy/random-phone-number-generator/blob/develop/LICENSE)
