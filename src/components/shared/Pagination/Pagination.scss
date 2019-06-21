@@ -1,0 +1,26 @@
+.pagination {
+  border: 1px solid #ced4da;
+  border-radius: 0.25em;
+
+  li {
+    padding: 5px;
+    min-width: 65px;
+    border-right: 1px solid #ced4da;
+    text-align: center;
+
+    &:last-child {
+      border-right: 0;
+    }
+
+    a {
+      color: #495057;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    li {
+      padding: 5px;
+      min-width: 35px;
+    }
+  }
+}

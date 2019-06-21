@@ -1,17 +1,33 @@
 {
-  "name": "random-phone-numbers",
+  "name": "random-phone-number-generator",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.7.0"
+  },
   "dependencies": {
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.3.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "node-sass": "^4.12.0",
     "react": "^16.8.6",
+    "react-csv-downloader": "^1.1.0",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-hot-loader": "^4.11.1",
+    "react-js-pagination": "^3.0.2",
+    "react-js-pagination-bs4": "^3.0.7",
+    "react-loader-spinner": "^2.3.0",
+    "react-scripts": "3.0.1",
+    "react-test-renderer": "^16.8.6",
+    "reactstrap": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "codecov": "codecov"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "enzyme-to-json": "^3.3.5"
   }
 }
