@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactPagination from "react-js-pagination";
 import PropTypes from 'prop-types';
 
-import WindowsDimensionContext from '../../contexts/WindowsDimensionContext';
+import WindowsDimensionContext from '../../../contexts/WindowsDimensionContext';
 import './Pagination.scss';
 
 

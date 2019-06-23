@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import PhoneNumberGenerator from './components/PhoneNumberGenerator/PhoneNumberGenerator';
-import withWindowDimensions from './components/hoc/withWindowDimension';
-import WindowsDimensionContext from './components/contexts/WindowsDimensionContext';
+import PhoneNumberGenerator from '../pages/PhoneNumberGenerator/PhoneNumberGenerator';
+import withWindowDimensions from '../hoc/withWindowDimension';
+import WindowsDimensionContext from '../../contexts/WindowsDimensionContext';
 import './App.scss';
 
 function App({ windowHeight, windowWidth, isMobileSized }) {
