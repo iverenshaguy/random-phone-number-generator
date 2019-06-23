@@ -3,10 +3,10 @@ import Loader from 'react-loader-spinner'
 import { Button, InputGroup, InputGroupAddon, Input, Table } from 'reactstrap';
 import CsvDownloader from 'react-csv-downloader';
 
-import Pagination from '../shared/Pagination/Pagination';
-import Modal from '../shared/Modal/Modal';
-import generateUniqueNumbers from '../../utils/generateUniqueNumbers';
-import sortNumbers from '../../utils/sortNumbers';
+import Pagination from '../../shared/Pagination/Pagination';
+import Modal from '../../shared/Modal/Modal';
+import generateUniqueNumbers from '../../../utils/generateUniqueNumbers';
+import sortNumbers from '../../../utils/sortNumbers';
 
 import './PhoneNumberGenerator.scss';
 
@@ -120,7 +120,7 @@ export default class PhoneNumberGenerator extends Component {
   renderModalActionButton= () => {
     const datas = this.state.results.map((number, index) => ({
       id: index + 1,
-      number
+      number: number.toString()
     }));
 
     const columns = [{
@@ -131,6 +131,9 @@ export default class PhoneNumberGenerator extends Component {
       displayName: 'Numbers'
     }];
 
+    console.log(datas);
+
+
     return (
       <CsvDownloader datas={datas} columns={columns} filename="phone-numbers">
         <Button color="secondary" onClick={this.saveResults}>Save Results</Button>
@@ -139,7 +142,7 @@ export default class PhoneNumberGenerator extends Component {
   }
 
   renderModalBody = () => {
-    const { sort, results, count } = this.state;
+    const { sort, results } = this.state;
     const length = results.length;
     const minimum = (!sort || sort === 'ASC') ? results[0] : results[length - 1];
     const maximum = (!sort || sort === 'ASC') ? results[length - 1] : results[0];
@@ -154,13 +157,14 @@ export default class PhoneNumberGenerator extends Component {
         <dt className="pl-5 col-sm-4">Maximum:</dt>
         <dd className="pl-5 col-sm-8">{maximum}</dd>
         <dt className="pl-5 col-sm-4">Count:</dt>
-        <dd className="pl-5 col-sm-8">{count}</dd>
+        <dd className="pl-5 col-sm-8">{length}</dd>
       </dl>
     );
   }
 
   render() {
     const { metadata, results, count, sort, loading } = this.state;
+    const disableButton = count > 10000 || count < 1;
     const ungenerated = !results.length && !loading;
 
     return (
@@ -175,7 +179,7 @@ export default class PhoneNumberGenerator extends Component {
             <InputGroup className="w-100 mb-3">
               <Input type="number" placeholder="Numbers Count" name="count" value={count} onChange={this.handleChange} />
               <InputGroupAddon addonType="append">
-                <Button className="w-100" disabled={count > 10000} onClick={this.generateNumbers}>Generate</Button>
+                <Button className="w-100" disabled={disableButton} onClick={this.generateNumbers}>Generate</Button>
               </InputGroupAddon>
             </InputGroup>
           </div>
